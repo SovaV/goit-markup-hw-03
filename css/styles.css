@@ -33,6 +33,19 @@ body {
 .link {
   text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 /* ======== КНОПКА ======== */
 
 .button {
@@ -61,7 +74,6 @@ body {
   line-height: 1.9;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .button.primary:hover,
@@ -117,9 +129,13 @@ body {
 /* ======== ГЕРОЙ ======== */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: #2f303a;
 }
 .hero-title {
+  margin-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
