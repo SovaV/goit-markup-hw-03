@@ -45,15 +45,10 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-img {
-  display: block;
-}
 
 /* ======== КНОПКА ======== */
 
 .button {
-  border-radius: 4px;
-
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: inherit;
@@ -71,10 +66,11 @@ img {
   color: var(--white-color);
 }
 .button.primary {
-  padding: 10px 32px;
-  border: 0px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 0px;
 
   background-color: var(--accent-text-color);
   color: var(--white-color);
@@ -82,7 +78,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
   align-items: center;
   letter-spacing: 0.06em;
 }
@@ -116,10 +111,16 @@ img {
 }
 
 /* ======== ШАПКА ======== */
-
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1170px;
-  border: 0px 15px;
+  outline: 2px solid tomato;
+}
+.top {
+  margin-bottom: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .top .link {
@@ -144,7 +145,8 @@ img {
 /* ======== ГЕРОЙ ======== */
 
 .hero {
-  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -152,7 +154,12 @@ img {
   background-color: #2f303a;
 }
 .hero-title {
+  width: 696px;
+  height: 120px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -163,13 +170,8 @@ img {
 }
 
 /* ======== ОСОБЕННОСТИ ======== */
-.features {
-  padding-top: 42px;
-  padding-bottom: 104px;
-}
-.features .title {
-  padding: 0px;
 
+.features .title {
   font-weight: bold;
   line-height: 1.1;
   font-size: 14px;
