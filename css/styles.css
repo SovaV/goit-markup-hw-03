@@ -45,7 +45,6 @@ body {
 
 img {
   display: block;
-  /* max-width: 100px; */
   height: auto;
 }
 
@@ -117,6 +116,10 @@ ul {
 }
 
 /* ======== ЛОГОТИП ======== */
+
+.logo .bot-accent {
+  margin-bottom: 20px;
+}
 
 .logo {
   color: var(--accent-text-color);
@@ -261,19 +264,10 @@ ul {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
-.work-set {
-  outline: 1px solid tomato;
-  display: flex;
-  padding: 0px;
-}
-
-.work-set > .img {
-  flex-basis: calc(100% / 3);
-  margin-left: 20px;
-  margin-top: 20px;
-}
 /* ======== НАША КОМАНДА ======== */
 
 .team {
@@ -318,6 +312,12 @@ ul {
 }
 /* ======== ПОДВАЛ ======== */
 
+.container .logo {
+  margin-bottom: 20px;
+  outline: 1px solid orange;
+  display: block;
+}
+
 .bot {
   margin-left: auto;
   margin-right: auto;
@@ -336,7 +336,7 @@ ul {
   padding: 0px;
 }
 
-.bot-nav .item {
+.bot-nav > .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -353,6 +353,9 @@ ul {
   color: var(--accent-text-color);
 }
 
+.footer {
+  outline: 1px solid tomato;
+}
 .item * {
   outline: 1px solid blueviolet;
 }
