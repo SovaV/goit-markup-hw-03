@@ -63,15 +63,21 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
+  width: 1200px;
 }
 
 /* ======== КНОПКА ======== */
 
 .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0px;
+
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: inherit;
@@ -82,20 +88,14 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  border-radius: 4px;
-  padding: 6px 22px;
-  border: 0px;
 }
+
 .button:hover,
 .button:focus {
   background-color: var(--accent-text-color);
   color: var(--white-color);
 }
+
 .button.primary {
   padding: 10px 32px;
 
@@ -108,10 +108,12 @@ ul {
   align-items: center;
   letter-spacing: 0.06em;
 }
+
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--secondary-button-bgc);
 }
+
 .filters .button.current {
   background-color: var(--accent-text-color);
   color: var(--white-color);
@@ -124,6 +126,8 @@ ul {
 }
 
 .logo {
+  display: block;
+
   color: var(--accent-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -131,18 +135,18 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: block;
 }
 
 .navigator .logo {
+  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   /* outline: 1px solid orange; */
-  margin-right: 93px;
 }
+
 .bot .logo {
-  /* outline: 1px solid orange; */
   margin-bottom: 20px;
+  /* outline: 1px solid orange; */
 }
 .accent {
   color: #000000;
@@ -157,19 +161,24 @@ ul {
 .top .link {
   color: var(--primary-text-color);
 }
+
 .top .container {
   display: flex;
+
   align-items: center;
 }
+
 .navigator {
   display: flex;
+
   align-items: center;
 }
 
 .site-nav {
   display: flex;
-  align-items: center;
   padding: 32px 0px;
+
+  align-items: center;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -178,6 +187,7 @@ ul {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
+
 .contact-nav {
   display: flex;
   margin-left: auto;
@@ -187,6 +197,7 @@ ul {
 .contact-nav .link {
   color: var(--secondary-text-color);
 }
+
 .mail.link {
   margin-right: 50px;
 }
@@ -203,19 +214,19 @@ ul {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
 
   background-color: #2f303a;
 }
 
 .hero-title {
-  width: 696px;
-  height: 120px;
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+  width: 696px;
+  height: 120px;
 
   color: var(--white-color);
   font-weight: 900;
@@ -230,10 +241,11 @@ ul {
 
 .filters.list {
   display: flex;
-  padding: 0px 0px 20px;
-  width: 611px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0px 0px 20px;
+  width: 611px;
+
   justify-content: space-between;
 }
 .filters .container {
@@ -242,11 +254,10 @@ ul {
 /* ======== ОСОБЕННОСТИ ======== */
 /* Карточки */
 .card-set {
-  padding: 0px;
-  margin: 0px;
-
   display: flex;
   flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
 
   margin-left: calc(-1 * var(--card-set-gap));
 }
@@ -295,36 +306,38 @@ ul {
 }
 
 .name-card .title {
+  padding: 20px 24px 4px;
+
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  padding: 20px 24px 4px;
 }
 
 .name-card .text {
+  padding: 0px 24px 20px;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 1.9;
   letter-spacing: 0.03em;
-
-  padding: 0px 24px 20px;
 }
 
 /* ======== ЧЕМ МЫ ЗАНИМАЕМСЯ ======== */
+
 .work .container {
   padding-top: 94px;
 }
+
 .work-title {
+  padding-bottom: 20px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
-  padding-bottom: 20px;
 }
 
 /* ======== НАША КОМАНДА ======== */
@@ -339,31 +352,33 @@ ul {
 }
 
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: 50px;
 }
+
 .team .title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: 10px;
 }
+
 .team .text {
+  margin-bottom: var(--card-set-gap);
+
   font-size: 16px;
   font-weight: normal;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: var(--card-set-gap);
 }
 
 .card-team {
@@ -372,11 +387,11 @@ ul {
 /* ======== ПОДВАЛ ======== */
 
 .bot {
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   background-color: #2f303a;
 }
@@ -384,12 +399,12 @@ ul {
   padding-top: 0px;
 }
 .bot-nav {
+  padding: 0px;
+
   font-style: normal;
   font-weight: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
-  padding: 0px;
 }
 
 .bot-nav > .item:not(:last-child) {
@@ -400,6 +415,7 @@ ul {
   color: var(--white-color);
   text-decoration: none;
 }
+
 .bot-nav .link {
   color: rgba(255, 255, 255, 0.6);
 }
