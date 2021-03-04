@@ -64,7 +64,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -82,6 +82,14 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0px;
 }
 .button:hover,
 .button:focus {
@@ -89,13 +97,7 @@ ul {
   color: var(--white-color);
 }
 .button.primary {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  border-radius: 4px;
   padding: 10px 32px;
-  border: 0px;
 
   background-color: var(--accent-text-color);
   color: var(--white-color);
@@ -129,8 +131,19 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: block;
 }
 
+.navigator .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  /* outline: 1px solid orange; */
+  margin-right: 93px;
+}
+.bot .logo {
+  /* outline: 1px solid orange; */
+  margin-bottom: 20px;
+}
 .accent {
   color: #000000;
 }
@@ -144,13 +157,38 @@ ul {
 .top .link {
   color: var(--primary-text-color);
 }
+.top .container {
+  display: flex;
+  align-items: center;
+}
+.navigator {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+  padding: 32px 0px;
+}
 
 .contact-nav .link {
   color: var(--secondary-text-color);
+}
+.mail.link {
+  margin-right: 50px;
 }
 
 .site-nav .link:hover,
@@ -168,7 +206,6 @@ ul {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 
   background-color: #2f303a;
 }
@@ -191,12 +228,19 @@ ul {
 
 /* ======== ФИЛЬТР ======== */
 
-.filters {
-  margin-bottom: 34px;
+.filters.list {
+  display: flex;
+  padding: 0px 0px 20px;
+  width: 611px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
 }
-
+.filters .container {
+  padding-bottom: 94px;
+}
 /* ======== ОСОБЕННОСТИ ======== */
-
+/* Карточки */
 .card-set {
   padding: 0px;
   margin: 0px;
@@ -208,14 +252,24 @@ ul {
 }
 
 .card-set > .item {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   box-shadow: var(--card-shadow);
 }
+.card-set .item-primary {
+  /* outline: 1px solid green; */
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.card-set .item-secondary {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
 
 .features .container {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 
 .features .title {
@@ -235,28 +289,33 @@ ul {
 }
 
 /* ======== НАШИ ПРОЕКТЫ ======== */
-.project {
-  margin-bottom: 94px;
+.name-card {
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
-.project .title {
+
+.name-card .title {
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  padding: 20px 24px 4px;
 }
 
-.project .text {
+.name-card .text {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.9;
   letter-spacing: 0.03em;
+
+  padding: 0px 24px 20px;
 }
 
 /* ======== ЧЕМ МЫ ЗАНИМАЕМСЯ ======== */
-
-.work {
-  margin-bottom: 94px;
+.work .container {
+  padding-top: 94px;
 }
 .work-title {
   font-weight: bold;
@@ -265,7 +324,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 /* ======== НАША КОМАНДА ======== */
@@ -304,19 +363,13 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 30px;
+  margin-bottom: var(--card-set-gap);
 }
 
 .card-team {
-  margin-bottom: 30px;
+  margin-bottom: var(--card-set-gap);
 }
 /* ======== ПОДВАЛ ======== */
-
-.container .logo {
-  margin-bottom: 20px;
-  outline: 1px solid orange;
-  display: block;
-}
 
 .bot {
   margin-left: auto;
@@ -326,6 +379,9 @@ ul {
   padding-bottom: 60px;
 
   background-color: #2f303a;
+}
+.bot .container {
+  padding-top: 0px;
 }
 .bot-nav {
   font-style: normal;
@@ -351,11 +407,4 @@ ul {
 .bot-nav .link:hover,
 .bot-nav .link:focus {
   color: var(--accent-text-color);
-}
-
-.footer {
-  outline: 1px solid tomato;
-}
-.item * {
-  outline: 1px solid blueviolet;
 }
