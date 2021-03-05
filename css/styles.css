@@ -164,21 +164,16 @@ ul {
 
 .top .container {
   display: flex;
-
-  align-items: center;
 }
 
 .navigator {
   display: flex;
-
   align-items: center;
 }
 
 .site-nav {
   display: flex;
   padding: 0px;
-
-  align-items: center;
 }
 .site-nav .link {
   padding: 32px 0px;
@@ -225,9 +220,14 @@ ul {
   background-color: #2f303a;
 }
 
+.hero-pages {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-title {
   margin-bottom: 30px;
-  padding: 0px 252px;
 
   color: var(--white-color);
   font-weight: 900;
