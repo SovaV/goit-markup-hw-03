@@ -220,14 +220,19 @@ ul {
   background-color: #2f303a;
 }
 
-.hero-pages {
+/* .hero-pages {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 696px;
 
   color: var(--white-color);
   font-weight: 900;
@@ -314,6 +319,8 @@ ul {
 }
 
 .contact-card .title {
+  margin-bottom: 4px;
+
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
